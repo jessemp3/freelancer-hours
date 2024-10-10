@@ -29,7 +29,7 @@ class ProjectsFactory extends Factory
 
             'title' => collect(fake()->words(5))->join(' '),
 
-            'description' => htmlspecialchars(fake()->randomHtml()),
+            'description' => fake()->randomHtml(),
 
             'ends_at' => fake()->dateTimeBetween('now' , '+ 3 days'),
 
