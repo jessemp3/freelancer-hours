@@ -1,12 +1,3 @@
-<div>
-    componente livewire project shooww
 
-    <pre>
-         title: {{ $project->title}}
+    <x-projects.card :$project />
 
-         description: {!! $project->description !!}
-
-
-
-    </pre>
-</div>

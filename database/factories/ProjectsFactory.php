@@ -35,10 +35,7 @@ class ProjectsFactory extends Factory
 
             'status' => fake()->randomElement(['open' , 'closed']),
 
-            'tech_stack'=> fake()->randomElements(['React' , 'Php' ,
-            'Laravel' , 'vue' , 'tailwind' , 'javascript' , 'nextJs' ,
-            'Python' , 'Node' , 'Sass' , 'Style-Components' , 'Pandas' ,
-            'Bulma' , 'TypeScript' ] , random_int(1,5) ),
+            'tech_stack'=> fake()->randomElements(['nodejs', 'react', 'javascript', 'vite', 'nextjs'] , random_int(1,5) ),
 
             'created_by'=> User::factory(),
         ];
